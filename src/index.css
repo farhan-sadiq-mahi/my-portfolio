@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+Body {
+  font-family: 'Press Start 2P', cursive;
+  background-image: url('./assets/img/bg.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  cursor: url('http://cypherwebs.xyz/images/cursor.png'), auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: s1 .35s ease-in-out;
+  transition: transform .3s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.onCursor {
+  cursor: url('http://cypherwebs.xyz/images/cursor-click.png'), auto;
+}
+
+.profilePicture {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: minecraft;
+  src: url('./font/Minecraft.ttf');
+}
+
+.minecraft {
+  font-family: minecraft;
 }
